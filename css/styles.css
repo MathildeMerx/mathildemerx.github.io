@@ -1,0 +1,218 @@
+a:hover{
+    background-color: var(--color-background-light);
+}
+
+a:link {
+    color: var(--color-highlight);
+}
+
+a:visited {
+    color: var(--color-contrast);
+}
+body {
+    background-color: var(--color-background);
+    color: var(--color-font-dark);
+    font-family: Roboto;
+    font-size: 1.3em;
+    line-height: 150%;
+    margin: 0;
+}
+
+.bottom-container {
+    background-color: var(--color-highlight);
+    font-size: 60%;
+    margin-bottom: 0;
+    padding-top: 1%;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.box-skills {
+    margin: 3em auto;
+    max-width: 50%;
+}
+
+@media (max-width: 600px) {
+    .box-skills {
+        max-width: 85%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 968px) {
+    .box-skills {
+        max-width: 75%;
+  }
+}
+
+@media (min-width: 968px) and (max-width: 1268px) {
+    .box-skills {
+        max-width: 65%;
+  }
+}
+
+@media (max-width: 768px) {
+    #cloud1 {
+      display: none;
+    }
+}
+
+#cloud1 {
+    margin: 0;
+    max-width: 15%;
+    position: absolute;
+    right: 15%;
+    top: 2.2em;
+}
+
+@media (max-width: 768px) {
+    #cloud2 {
+      display: none;
+    }
+}
+
+#cloud2 {
+    bottom: 20em;
+    left: 4%;
+    margin: 0;
+    max-width: 15%;
+    position: absolute;
+}
+
+#first-subtitle {
+    font-size: 1.3em;;
+}
+
+@media (max-width: 768px) {
+    #first-subtitle {
+        padding-bottom: 3%;
+    }
+}
+
+#first-title {
+    color: var(--color-highlight);
+    font-family: "Indie Flower";
+    font-size: 3em;
+    margin: 0;
+    padding-top: 4%;
+}
+
+@media (max-width: 768px) {
+    #first-title {
+        padding-bottom: 3%;
+        padding-top: 12%;
+    }
+}
+
+h2 {
+    font-size: 170%;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
+hr {
+    background-color: none;
+    border-style: dotted none none;
+    border-width: 7px;
+    color: var(--color-highlight);
+    height: 0;
+    margin-bottom: 10%;
+    width: 30%;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+.img-center-page {
+    max-height: 50%;
+    max-width: 55%;
+}
+
+@media (max-width: 1068px) {
+.img-center-page {
+      max-width: 60%;
+      max-height: 75%;
+    }
+}
+
+.img-circular {
+    border-radius: 50%;
+}
+
+.img-float-left {
+    float: left;
+    margin-right: 4%;
+    margin-top: 4%;
+    max-height: 24%;
+    max-width: 34%;
+}
+
+@media (max-width: 922px) {
+    .img-float-left {
+        float: none;
+        margin: auto;
+        max-height: 70%;
+        max-width: 75%;
+        padding-bottom: 5%;
+    }
+}
+
+.image-legend {
+    font-size: 50%;
+    margin-top: 0;
+    text-align: center;
+}
+
+p {
+    margin: auto;
+    padding-bottom: 6%;
+    max-width: 100%;
+}
+
+.p-nopadding{
+    padding-bottom: 1%;
+}
+
+:root {
+    --color-background: #edf3f2;
+    --color-background-intense: #d9ebe8;
+    --color-background-light: #ffffff;
+    --color-contrast: #00856c;
+    --color-font-dark: #222831;
+    --color-highlight: #0dceae;
+}
+
+@media (max-width: 922px) {
+    .text-float-right {
+        clear: both;
+    }
+}
+
+.text-float-left {
+    clear: left;
+    margin-left: 0;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.top-container {
+    background-color: var(--color-background-intense);
+    margin: 0;
+    padding-top: 4%;
+    position: relative;
+    text-align: center;
+}
+
+#top-container-main-image {
+    max-height: 22em;
+    max-width: 90%; 
+}
+
+ul {
+    margin-top: 0;
+    padding-bottom: 7%;
+}

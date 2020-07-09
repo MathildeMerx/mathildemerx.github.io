@@ -1,0 +1,364 @@
+/*Color palette: https://colorhunt.co/palette/181665 with this red? #921224 or #9d2503 */
+
+a:hover {
+    background-color: var(--color-background-intense);
+}
+
+a:link {
+    color: var(--color-contrast);
+}
+
+a:visited {
+    color: var(--color-contrast);
+}
+
+#back-contents {
+    text-align: right;
+    font-size: 90%;
+}
+body {
+    background-color: var(--color-background);
+    font-family: "Patrick Hand", cursive;
+    font-size: 150%;
+    margin: auto;
+    max-width: 65%;
+}
+
+@media (max-width: 600px) {
+    body {
+        max-width: 85%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 968px) {
+    body {
+        max-width: 75%;
+  }
+}
+
+@media (min-width: 968px) and (max-width: 1268px) {
+    body {
+        max-width: 65%;
+  }
+}
+
+h1 {
+    color: var(--color-highlight);
+    padding-bottom: 4%;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: var(--color-contrast);
+}
+
+h3 {
+    color: var(--color-highlight);
+    margin-bottom: 0;
+    padding-bottom: 4%;
+}
+
+hr {
+    background-color: none;
+    border-style: dotted none none;
+    color: var(--color-highlight);
+    border-width: 5px;
+    width: 30%;
+    height: 0px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+    padding: 5%;
+    max-width: 100%;
+    height: auto;
+}
+
+.img-center {
+    border-radius: 50%;
+    max-height: 60%;
+    max-width: 60%;
+}
+
+@media (min-width: 922px) {
+    .img-center {
+        max-height: 45%;
+        max-width: 45%;
+  }
+}
+
+.img-circular {
+    border-radius: 50%;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+@media (max-width: 922px) {
+    .img-circular {
+        margin: -5% auto -5% auto;
+        max-height: 60%;
+        max-width: 60%;
+        padding: 0;
+  }
+}
+
+.img-icon {
+    
+    max-height: 8em;
+    max-width: 8em;
+}
+
+.ingredients {
+    text-align: left;
+}
+
+li {
+    color: var(--color-font-dark);
+    padding-bottom: 1%;
+}
+
+@media (max-width: 722px) {
+    li {
+        padding-bottom: 3%;
+  }
+}
+
+
+#Mathilde-website {
+    color: var(--color-Mathilde);
+    display: block;
+    font-family: "Indie Flower";
+    margin: 0;
+    padding:0;
+    position: relative;
+}
+
+p {
+    color: var(--color-font-dark);
+    margin: 5% auto 5% auto;
+}
+
+@media (max-width: 600px) {
+    p {
+        margin: 0;
+  }
+}
+
+:root {
+    --color-background: #f1e3cb;
+    --color-background-intense: #eec57f;
+    --color-contrast: #ee6525;
+    --color-font-dark: #581c0c;
+    --color-highlight: #921224;
+    --color-Mathilde: #33e1c4;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper {
+    align-items: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: [col] 33.3% [col] 33.4% [col] 33.3%;
+    grid-template-rows: [row] auto [row] auto [row] auto [row] auto [row] ;
+}
+
+.wrapper2 {
+    align-items: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: [col] 30.3% [col] 41.7% [col] 28%;
+    grid-template-rows: [row] auto [row] auto [row] auto [row] auto [row] ;
+    text-align: center;
+}
+
+@media (max-width: 922px) {
+    .wrapper {
+        grid-template-columns: [col] 100%;
+  }
+}
+
+.box {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.a {
+    grid-column: col ;
+    grid-row: row ;
+}
+.b {
+    grid-column: col 2 / span 2 ;
+    grid-row: row ;
+}
+.b-prime {
+    align-items: right;
+    grid-column: col 3 ;
+    grid-row: row ;
+}
+.c {
+    grid-column: col 3 ;
+    grid-row: row 2 ;
+}
+.d {
+    grid-column: col / span 2;
+    grid-row: row 2 ;
+}
+.e {
+    grid-column: col ;
+    grid-row: row 3;
+}
+.f {
+    grid-column: col 2 / span 2 ;
+    grid-row: row 3;
+}
+.g {
+    grid-column: col 3 ;
+    grid-row: row 4 ;
+}
+.h {
+    grid-column: col / span 2;
+    grid-row: row 4 ;
+}
+.i {
+    grid-column: col ;
+    grid-row: row 5;
+}
+.j {
+    grid-column: col 2 / span 2 ;
+    grid-row: row 5;
+}
+.k {
+    grid-column: col 3 ;
+    grid-row: row 6 ;
+}
+.l {
+    grid-column: col / span 2;
+    grid-row: row 6 ;
+}
+.m {
+    grid-column: col ;
+    grid-row: row 7;
+}
+.n {
+    grid-column: col 2 / span 2 ;
+    grid-row: row 7;
+}
+.o {
+    grid-column: col 3 ;
+    grid-row: row 8 ;
+}
+.p {
+    grid-column: col / span 2;
+    grid-row: row 8 ;
+}
+.q {
+    grid-column: col ;
+    grid-row: row 9;
+}
+.r {
+    grid-column: col 2 / span 2 ;
+    grid-row: row 9;
+}
+.s {
+    grid-column: col 3 ;
+    grid-row: row 10 ;
+}
+.t {
+    grid-column: col / span 2;
+    grid-row: row 10 ;
+}
+
+@media (max-width: 922px) {
+    .a {
+        grid-column: col ;
+        grid-row: row ;
+    }
+    .b {
+        grid-column: col ;
+        grid-row: row 2 ;
+    }
+    .b-prime {
+        grid-column: col 3 ;
+        grid-row: row 1;
+    }
+    .c {
+        grid-column: col ;
+        grid-row: row 4 ;
+    }
+    .d {
+        grid-column: col ;
+        grid-row: row 5;
+    }
+    .e {
+        grid-column: col ;
+        grid-row: row 6;
+    }
+    .f {
+        grid-column: col ;
+        grid-row: row 7;
+    }
+    .g {
+        grid-column: col ;
+        grid-row: row 8 ;
+    }
+    .h {
+        grid-column: col ;
+        grid-row: row 9 ;
+    }
+    .i {
+        grid-column: col ;
+        grid-row: row 10;
+    }
+    .j {
+        grid-column: col ;
+        grid-row: row 11;
+    }
+    .k {
+        grid-column: col  ;
+        grid-row: row 12 ;
+    }
+    .l {
+        grid-column: col ;
+        grid-row: row 13 ;
+    }
+    .m {
+        grid-column: col ;
+        grid-row: row 14;
+    }
+    .n {
+        grid-column: col ;
+        grid-row: row 15;
+    }
+    .o {
+        grid-column: col ;
+        grid-row: row 16 ;
+    }
+    .p {
+        grid-column: col ;
+        grid-row: row 17 ;
+    }
+    .q {
+        grid-column: col ;
+        grid-row: row 18;
+    }
+    .r {
+        grid-column: col  ;
+        grid-row: row 19;
+    }
+    .s {
+        grid-column: col 3 ;
+        grid-row: row 20 ;
+    }
+    .t {
+        grid-column: col / span 2;
+        grid-row: row 21 ;
+    }
+}
