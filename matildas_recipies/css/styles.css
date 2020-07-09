@@ -42,6 +42,20 @@ body {
   }
 }
 
+.bottom-container {
+    background-color: var(--color-highlight);
+    font-size: 60%;
+    margin: 10% -26.9% 0 -26.9%;
+    text-align: center;
+}
+
+.bottom-container-font {
+    color: var(--color-background);
+    margin: 0;
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
+}
+
 h1 {
     color: var(--color-highlight);
     padding-bottom: 4%;
