@@ -1,3 +1,7 @@
+a {
+    transition: color 1s ease;
+}
+
 a:hover{
     background-color: var(--color-background-light);
 }
@@ -9,6 +13,11 @@ a:link {
 a:visited {
     color: var(--color-contrast);
 }
+
+.background-bright {
+    background-color: var(--color-background-intense);
+}
+
 body {
     background-color: var(--color-background);
     color: var(--color-font-dark);
@@ -23,7 +32,7 @@ body {
     font-size: 60%;
     margin-bottom: 0;
     padding-top: 1%;
-    padding-bottom: 0;
+    padding-bottom: 1%;
     text-align: center;
 }
 
@@ -61,7 +70,7 @@ body {
     max-width: 15%;
     position: absolute;
     right: 15%;
-    top: 2.2em;
+    top: 20%;
 }
 
 @media (max-width: 768px) {
@@ -71,7 +80,7 @@ body {
 }
 
 #cloud2 {
-    bottom: 20em;
+    bottom: 30%;
     left: 4%;
     margin: 0;
     max-width: 15%;
@@ -93,7 +102,7 @@ body {
     font-family: "Indie Flower";
     font-size: 3em;
     margin: 0;
-    padding-top: 4%;
+    padding-top: 3%;
 }
 
 @media (max-width: 768px) {
@@ -104,22 +113,29 @@ body {
 }
 
 h2 {
-    font-size: 170%;
+    font-size: 175%;
+    padding-bottom: 1.5%;
+    padding-top: 0;
     text-align: center;
 }
 
 h3 {
     font-size: 1.1em;
+    font-weight: bold;
 }
 
 hr {
-    background-color: none;
-    border-style: dotted none none;
+    border-style: none none dotted;
     border-width: 7px;
     color: var(--color-highlight);
     height: 0;
     margin-bottom: 10%;
+    padding-top: 7%;
     width: 30%;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 img {
@@ -167,6 +183,16 @@ img {
     text-align: center;
 }
 
+li {
+    list-style-position: inside;
+}
+
+.navbar-title {
+    color: var(--color-highlight);
+    font-family: "Indie Flower";
+    font-size: 150%;
+}
+
 p {
     margin: auto;
     padding-bottom: 6%;
@@ -174,7 +200,7 @@ p {
 }
 
 .p-nopadding{
-    padding-bottom: 1%;
+    padding-bottom: 0;
 }
 
 :root {
@@ -199,7 +225,7 @@ p {
     max-width: 100%;
 }
 
-.top-container {
+#top-container {
     background-color: var(--color-background-intense);
     margin: 0;
     padding-top: 4%;
