@@ -2,8 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
     <title>Florentins - Matilda's recipies</title>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
@@ -11,78 +16,101 @@
 
 
 <body>
-    <div class="wrapper2">
-        <div class="box a"><p><a id="Mathilde-website" href="https://mathildemerx.github.io/website/"> Mathilde website</a></p></div>
-        <div class="box b-prime"><p><a href="Contents.html"> Back to contents</a></p> </div>
-    </div>
-
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top background-intense">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-title p-nomargin" href="Contents.html" >Mathilde</p>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav p-nopadding ml-auto">
+                <li class="nav-item dropdown color-Mathilde" id="color-orange">
+                    <a class="nav-link dropdown-toggle"  id="color-orange" href="#blog" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      My profile website
+                    </a>
+                    <div class="dropdown-menu background-intense" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item background-intense" id="color-orange" href="mathildemerx.github.io">Mathilde's profile</a>
+                      <a class="dropdown-item background-intense" id="color-orange" href="#">Machine Learning and WevDev</a>
+                    </div>
+                </li>
+                <li class="nav-item" id="color-brown">
+                  <a class="nav-link" id="color-brown" href="#ingredients">Ingredients</a>
+                </li>
+                <li class="nav-item" id="color-brown">
+                  <a class="nav-link" id="color-brown" href="#recipie">Recipie</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <h1>Florentins</h1>
 
     <img class="img-center" src="images/florentins_icon.png" alt="florentin">
 
-    <h3>Ingredients:</h3>
-    <ul class="ingredients">
-        <li>10g of salted butter (or non salted butter with a pinch of salt)</li>
-        <li>50g of double cream</li>
-        <li>25g of sugar</li>
-        <li>25g of honey (preferably a good one, with a strong taste, like fir honey)</li>
-        <li>75g of flaked almonds</li>
-        <li>40g of diced candied fruits (I prefer orange only, but cherries and angelica are very common as well) </li>
-        <li>100g of baking (couverture) chocolate: white, milk or dark, as you prefer</li>
-        <li>1g of mycryo (powdered cocoa butter)</li>
-    </ul>
+    <div id="ingredients">
+        <hr>
 
-    <hr>
-    <h3>Recipe:</h3>
+        <h3>Ingredients:</h3>
+        <ul class="ingredients">
+            <li>10g of salted butter (or non salted butter with a pinch of salt)</li>
+            <li>50g of double cream</li>
+            <li>25g of sugar</li>
+            <li>25g of honey (preferably a good one, with a strong taste, like fir honey)</li>
+            <li>75g of flaked almonds</li>
+            <li>40g of diced candied fruits (I prefer orange only, but cherries and angelica are very common as well) </li>
+            <li>100g of baking (couverture) chocolate: white, milk or dark, as you prefer</li>
+            <li>1g of mycryo (powdered cocoa butter)</li>
+        </ul>
+    </div>
+
+    <div id="recipie">
+        <hr>
+        
+        <h3>Recipe:</h3>
 
 
-    <div class="wrapper">
-        <div class="box a"><img class ="img-circular" src="images/florentins_sugar_butter_honey.jpeg" alt="Butter, cream, sugar, honey"> </div>
+        <div class="wrapper">
+            <div class="box a"><img class ="img-circular" src="images/florentins_sugar_butter_honey.jpeg" alt="Butter, cream, sugar, honey"> </div>
 
-        <div class="box b"><p >Preheat the oven at 200°C. Put the butter, the cream, the sugar and the honey in a small pot, medium/high heat. Stirr regularely. Leave the mixture to boil for a few minutes, it shouldn't be darker than light brown.</p></div>
+            <div class="box b"><p >Preheat the oven at 200°C. Put the butter, the cream, the sugar and the honey in a small pot, medium/high heat. Stirr regularely. Leave the mixture to boil for a few minutes, it shouldn't be darker than light brown.</p></div>
 
-        <div class="box c"><img class ="img-circular" src="images/florentins_caramel_almonds.jpeg" alt="Caramel almonds"></div>
+            <div class="box c"><img class ="img-circular" src="images/florentins_caramel_almonds.jpeg" alt="Caramel almonds"></div>
 
-        <div class="box d"><p class ="text-float-left"> Add the almond and candied fruits, stirr well. Leave to caramelize for about 2 minutes: the caramel shouldn't get darker, but some almonds should get golden brown.</p></div>
+            <div class="box d"><p class ="text-float-left"> Add the almond and candied fruits, stirr well. Leave to caramelize for about 2 minutes: the caramel shouldn't get darker, but some almonds should get golden brown.</p></div>
 
-        <div class="box e"> <img class ="img-circular" src="images/florentins_before_oven.jpeg" alt="Moulds before oven"></div>
+            <div class="box e"> <img class ="img-circular" src="images/florentins_before_oven.jpeg" alt="Moulds before oven"></div>
 
-        <div class="box f"><p>Pour in moulds, up to the top of the edges. I love these small spheres, but the traditional florentins moulds are <a href="https://www.amazon.com/silikomart-Silicone-Florentines-Terracotta-1-4-inch/dp/B002ZIH52G/ref=pd_lpo_201_t_0/257-2923899-5214452?_encoding=UTF8&pd_rd_i=B002ZIH52G&pd_rd_r=5d731a57-47c2-49d5-9197-4b4d9189187e&pd_rd_w=OW96H&pd_rd_wg=CZ4Kl&pf_rd_p=7b8e3b03-1439-4489-abd4-4a138cf4eca6&pf_rd_r=9NBGTW76P5MJ6119Q86S&psc=1&refRID=9NBGTW76P5MJ6119Q86S" target="_blank"> these</a>. Put the moulds in the oven for 10 minutes, the florentins should have a beautiful brown color (depending on the stickyness/crunchyness balance you prefer, you can leave them in the oven for 8 to 12 minutes). </p></div>
+            <div class="box f"><p>Pour in moulds, up to the top of the edges. I love these small spheres, but the traditional florentins moulds are <a href="https://www.amazon.com/silikomart-Silicone-Florentines-Terracotta-1-4-inch/dp/B002ZIH52G/ref=pd_lpo_201_t_0/257-2923899-5214452?_encoding=UTF8&pd_rd_i=B002ZIH52G&pd_rd_r=5d731a57-47c2-49d5-9197-4b4d9189187e&pd_rd_w=OW96H&pd_rd_wg=CZ4Kl&pf_rd_p=7b8e3b03-1439-4489-abd4-4a138cf4eca6&pf_rd_r=9NBGTW76P5MJ6119Q86S&psc=1&refRID=9NBGTW76P5MJ6119Q86S" target="_blank"> these</a>. Put the moulds in the oven for 10 minutes, the florentins should have a beautiful brown color (depending on the stickyness/crunchyness balance you prefer, you can leave them in the oven for 8 to 12 minutes). </p></div>
 
-        <div class="box g"><img class="img-circular" src="images/florentins_cooked.jpeg" alt="Florentin cooked" ></div>
+            <div class="box g"><img class="img-circular" src="images/florentins_cooked.jpeg" alt="Florentin cooked" ></div>
 
-        <div class="box h"><p>Now, you have a choice: either the smell is so tempting you eat them all straight away (and I can only understand you!). Or you try and be reasonable, and let them cool on the countertop for an hour. Then, put them in the fridge for the next steps. </p></div>
+            <div class="box h"><p>Now, you have a choice: either the smell is so tempting you eat them all straight away (and I can only understand you!). Or you try and be reasonable, and let them cool on the countertop for an hour. Then, put them in the fridge for the next steps. </p></div>
 
-        <div class="box i"><img class="img-circular" src="images/florentins_chocolate45.jpeg" alt="Chocolate 45 degrees"> </div>
+            <div class="box i"><img class="img-circular" src="images/florentins_chocolate45.jpeg" alt="Chocolate 45 degrees"> </div>
 
-        <div class="box j"><p>You now have to temper your chocolate. You can either follow the tempering curve from the packaging, or use the mycryo method which I detail here, and is much faster. In a water bath, bring your chocolate to the first temperature written on the chocolate packaging (usually, it's 50-55°C for dark chocolate, 45-50°C for milk, blond and white chocolate). Be very careful: NO WATER should touch your chocolate, or you <em>have</em> to start again.</p></div>
+            <div class="box j"><p>You now have to temper your chocolate. You can either follow the tempering curve from the packaging, or use the mycryo method which I detail here, and is much faster. In a water bath, bring your chocolate to the first temperature written on the chocolate packaging (usually, it's 50-55°C for dark chocolate, 45-50°C for milk, blond and white chocolate). Be very careful: NO WATER should touch your chocolate, or you <em>have</em> to start again.</p></div>
 
-        <div class="box k"><img class="img-circular" src="images/florentins_chocolate_mycryo.jpeg" alt="Chocolate 35 degrees"></div>
+            <div class="box k"><img class="img-circular" src="images/florentins_chocolate_mycryo.jpeg" alt="Chocolate 35 degrees"></div>
 
-        <div class="box l"><p> Leave to cool down on your countertop, and stirr regularely until it reaches 35°C. In the mean time, prepare a sheet of baking paper and take the pastries out of the fridge. When the chocolate reaches 35°C, add the mycryo, and stirr well so it is perfectly integrated. </p></div>
+            <div class="box l"><p> Leave to cool down on your countertop, and stirr regularely until it reaches 35°C. In the mean time, prepare a sheet of baking paper and take the pastries out of the fridge. When the chocolate reaches 35°C, add the mycryo, and stirr well so it is perfectly integrated. </p></div>
 
-        <div class="box m"><img class="img-circular" src="images/florentins_test_outcome.jpeg" alt="Test outcome"></div>
+            <div class="box m"><img class="img-circular" src="images/florentins_test_outcome.jpeg" alt="Test outcome"></div>
 
-        <div class="box n"><p> At 32°C, you can make a test: put a piece of baking paper in the chocolate, than in the fridge for 2 minutes. When you take it out, it should remain a bit shiny, and if you try and put your finger in it, no chocolate should go on your finger! If the test failed, you can go back to the step of the water bath and try all over again. Chocolate is very resilient, so you can try as many times as you need provided that your chocolate hasn't begun to cook (over 55°C for black chocolate, over 50°C for the others). </p></div>
+            <div class="box n"><p> At 32°C, you can make a test: put a piece of baking paper in the chocolate, than in the fridge for 2 minutes. When you take it out, it should remain a bit shiny, and if you try and put your finger in it, no chocolate should go on your finger! If the test failed, you can go back to the step of the water bath and try all over again. Chocolate is very resilient, so you can try as many times as you need provided that your chocolate hasn't begun to cook (over 55°C for black chocolate, over 50°C for the others). </p></div>
 
-        <div class="box o"><img class="img-circular" src="images/florentins_drain.jpeg" alt="shake strongly"> </div>
-    
-        <div class="box p"><p>Plunge the florentins in the chocolate (the flat part if you used traditional florentins' moulds, the round one if you used the same as mine, or all of it if you're a foodie!). Shake them strongly above the chocolate to get rid of the surplus, and leave them to rest on the baking paper - until the chocolate is cristallized. The room temperature shouldn't be above 18°C (ideally 16°C). If it is, put them in the fridge for about an hour.</p></div>
+            <div class="box o"><img class="img-circular" src="images/florentins_drain.jpeg" alt="shake strongly"> </div>
+        
+            <div class="box p"><p>Plunge the florentins in the chocolate (the flat part if you used traditional florentins' moulds, the round one if you used the same as mine, or all of it if you're a foodie!). Shake them strongly above the chocolate to get rid of the surplus, and leave them to rest on the baking paper - until the chocolate is cristallized. The room temperature shouldn't be above 18°C (ideally 16°C). If it is, put them in the fridge for about an hour.</p></div>
 
-        <div class="box q"> <img class="img-circular" src="images/florentins_Plate.jpeg" alt="tea time" style="width:500px"></div>
+            <div class="box q"> <img class="img-circular" src="images/florentins_Plate.jpeg" alt="tea time" style="width:500px"></div>
 
-        <div class="box r"> <p>You can pour any chocolate leftovers on a baking paper - you can crunch it later: you've just made your own chocolate bar! Eventually, you can eat your fresh hand-made florentins... Store the remaining florentins in an airtight container, at room temperature. But I doubt you'll have any left! </p></div>
-
+            <div class="box r"> <p>You can pour any chocolate leftovers on a baking paper - you can crunch it later: you've just made your own chocolate bar! Eventually, you can eat your fresh hand-made florentins... Store the remaining florentins in an airtight container, at room temperature. But I doubt you'll have any left! </p></div>
+        </div>
     </div>
 
     <h2>Bon appétit !</h2>
 
-    <p id="back-contents">Go back to the <a href="Contents.html">contents</a>.</p>
-    
-    
     <div class="bottom-container"> 
         <p class="bottom-container-font">© 2020 Mathilde Merx.</p>
     </div>
-
 </body>
 </html>
