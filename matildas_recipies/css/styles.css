@@ -1,4 +1,7 @@
 /*Color palette: https://colorhunt.co/palette/181665 with this red? #921224 or #9d2503 */
+a {
+  transition:color 1s ease;
+}
 
 a:hover {
     background-color: var(--color-background-intense);
@@ -16,11 +19,16 @@ a:visited {
     text-align: right;
     font-size: 90%;
 }
+
+.background-intense {
+    background-color: var(--color-background-intense);
+}
+
 body {
     background-color: var(--color-background);
     font-family: "Patrick Hand", cursive;
     font-size: 150%;
-    margin: auto;
+    margin: 10% auto 0 auto;
     max-width: 65%;
 }
 
@@ -56,10 +64,25 @@ body {
     padding-top: 1.5%;
 }
 
+#color-brown {
+    color: var(--color-font-dark)
+}
+
+#color-orange {
+    color: var(--color-contrast);
+}
+
 h1 {
     color: var(--color-highlight);
+    font-size: 200%;
     padding-bottom: 4%;
     text-align: center;
+}
+
+@media (max-width: 968px) {
+    h1 {
+        padding-top: 7%;
+  }
 }
 
 h2 {
@@ -75,11 +98,17 @@ h3 {
 
 hr {
     background-color: none;
-    border-style: dotted none none;
+    border-style: none none dotted;
     color: var(--color-highlight);
     border-width: 5px;
+    margin-bottom: 3%;
+    padding-top: 7%;
     width: 30%;
     height: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 img {
@@ -151,6 +180,12 @@ li {
     position: relative;
 }
 
+.navbar-title {
+    color: var(--color-highlight);
+    font-family: "Patrick Hand";
+    font-size: 130%;
+}
+
 p {
     color: var(--color-font-dark);
     margin: 5% auto 5% auto;
@@ -160,6 +195,10 @@ p {
     p {
         margin: 0;
   }
+}
+
+.p-nomargin {
+    margin: 0;
 }
 
 :root {
