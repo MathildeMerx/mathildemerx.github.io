@@ -41,19 +41,19 @@ body {
     max-width: 50%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
     .box-skills {
         max-width: 85%;
   }
 }
 
-@media (min-width: 600px) and (max-width: 968px) {
+@media (min-width: 576px) and (max-width: 992px) {
     .box-skills {
         max-width: 75%;
   }
 }
 
-@media (min-width: 968px) and (max-width: 1268px) {
+@media (min-width: 992px) and (max-width: 1200px) {
     .box-skills {
         max-width: 65%;
   }
@@ -115,13 +115,26 @@ body {
 h2 {
     font-size: 175%;
     padding-bottom: 1.5%;
-    padding-top: 0;
+    padding-top: 3%;
     text-align: center;
+}
+
+@media (min-width: 2000px) {
+    h2 {
+        padding: 20px 0 20px 0;
+    }
 }
 
 h3 {
     font-size: 1.1em;
     font-weight: bold;
+    position: static;
+}
+
+@media (min-width: 2000px) {
+    h3 {
+        padding: 40px 0 0 0;
+    }
 }
 
 hr {
@@ -132,6 +145,13 @@ hr {
     margin-bottom: 10%;
     padding-top: 7%;
     width: 30%;
+}
+
+@media (min-width: 992px) {
+    hr {
+        margin-bottom: 30px;
+        padding-top: 30px;
+    }
 }
 
 html {
@@ -148,7 +168,7 @@ img {
     max-width: 55%;
 }
 
-@media (max-width: 1068px) {
+@media (max-width: 992px) {
 .img-center-page {
       max-width: 60%;
       max-height: 75%;
@@ -161,19 +181,19 @@ img {
 
 .img-float-left {
     float: left;
-    margin-right: 4%;
-    margin-top: 4%;
+    margin-right: 20px;
+    margin-top: 10px;
     max-height: 24%;
     max-width: 34%;
 }
 
-@media (max-width: 922px) {
+@media (max-width: 992px) {
     .img-float-left {
-        float: none;
-        margin: auto;
+        float: center;
+        margin: 4% auto 4% auto;
         max-height: 70%;
         max-width: 75%;
-        padding-bottom: 5%;
+
     }
 }
 
@@ -199,8 +219,20 @@ p {
     max-width: 100%;
 }
 
+@media (min-width: 2000px) {
+    p {
+        padding: 0;
+    }
+}
+
 .p-nopadding{
     padding-bottom: 0;
+}
+
+@media (min-width: 2000px) {
+    .row {
+        max-height: 200px;
+    }
 }
 
 :root {
@@ -212,7 +244,7 @@ p {
     --color-highlight: #0dceae;
 }
 
-@media (max-width: 922px) {
+@media (max-width: 992px) {
     .text-float-right {
         clear: both;
     }
@@ -242,3 +274,10 @@ ul {
     margin-top: 0;
     padding-bottom: 7%;
 }
+
+@media (min-width: 2000px) {
+    ul {
+        padding: 0 0 40px 0;
+    }
+}
+

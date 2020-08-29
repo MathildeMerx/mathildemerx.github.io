@@ -75,11 +75,16 @@ body {
 h1 {
     color: var(--color-highlight);
     font-size: 200%;
-    padding-bottom: 4%;
     text-align: center;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 576px){
+    h1 {
+        padding-top: 10%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
     h1 {
         padding-top: 7%;
   }
@@ -93,7 +98,12 @@ h2 {
 h3 {
     color: var(--color-highlight);
     margin-bottom: 0;
-    padding-bottom: 4%;
+}
+
+@media (max-width: 576px) {
+    h3 {
+        padding-bottom: 4%;
+  }
 }
 
 hr {
@@ -129,13 +139,13 @@ img {
 
 @media (min-width: 992px) {
     .img-center {
-        max-height: 45%;
-        max-width: 45%;
+        max-height: 75%;
+        max-width: 75%;
   }
 }
 
 .img-circular {
-    border-radius: 50%;
+    border-radius: 20%;    
     max-height: 100%;
     max-width: 100%;
 }
@@ -159,9 +169,14 @@ img {
 }
 
 .img-icon {
-    
-    max-height: 8em;
-    max-width: 8em;
+    border-radius: 50%;
+}
+
+@media (min-width: 576px) {
+    .img-icon {
+        max-height: 75%;
+        max-width: 75%;
+    }
 }
 
 .ingredients {
@@ -170,12 +185,11 @@ img {
 
 li {
     color: var(--color-font-dark);
-    padding-bottom: 1%;
 }
 
 @media (max-width: 768px) {
     li {
-        padding-bottom: 3%;
+        padding-bottom: 1%;
   }
 }
 
@@ -197,7 +211,7 @@ li {
 
 p {
     color: var(--color-font-dark);
-    margin: 5% auto 5% auto;
+    margin-top: 5%;
 }
 
 @media (max-width: 576px) {
@@ -231,12 +245,6 @@ table {
     grid-template-columns: [col] 50% [col] 50% ;
     grid-template-rows: [row] auto [row] auto [row] auto [row];
 }
-
-/* @media (max-width: 1200px) {
-    .wrapper {
-        grid-template-columns: [col] 100%;
-  }
-} */
 
 .box {
     border-radius: 5px;
