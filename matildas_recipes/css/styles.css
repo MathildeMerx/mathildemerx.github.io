@@ -64,6 +64,11 @@ body {
     padding-top: 1.5%;
 }
 
+.centering {
+    text-align: center;
+    margin: 0;
+}
+
 #color-brown {
     color: var(--color-font-dark)
 }
@@ -112,7 +117,7 @@ hr {
     color: var(--color-highlight);
     border-width: 5px;
     margin-bottom: 3%;
-    padding-top: 7%;
+    padding-top: 5%;
     width: 30%;
     height: 0px;
 }
